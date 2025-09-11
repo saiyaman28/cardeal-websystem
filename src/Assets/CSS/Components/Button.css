@@ -1,0 +1,22 @@
+button,
+input[type="submit"],
+label:has(input[type="radio"]),
+label:has(input[type="file"]) {
+    background-color: #851022 !important;
+    position: relative !important;
+    color: white !important;
+    cursor: pointer !important;
+    padding: 8px 13px !important;
+    text-transform: uppercase !important;
+}
+button:hover,
+input[type="submit"]:hover,
+label:has(input[type="radio"]):hover,
+label:has(input[type="file"]):hover {
+    background-color: #357266 !important;
+    transition: .23s !important;
+}
+label:has(input[type="radio"]) > input[type="radio"],
+label:has(input[type="file"]) > input[type="file"] {
+    display: none !important;
+}
