@@ -1,17 +1,14 @@
-import React from 'react'
-import { Header, Href, Button, Inputbox, Selectbox } from '../Exporter/Components_Exporter.jsx'
+// import React from 'react'
+import { Main, Section } from '../Exporter/Components_Exporter'
 
-const Landing = () => {
+export default function LandingPage() {
     return (
         <>
-        <div>
-            <Button File />
-            <Inputbox />
-            <Selectbox />
-            <Href />
-        </div>
-        </>
-    );
-};
+            <Main>
+                <Section Title={`Walang Laman to`}>
 
-export default Landing;
+                </Section>
+            </Main>
+        </>
+    )
+}

@@ -1,4 +1,4 @@
-import React from 'react'
+// import React from 'react'
 import '../../Assets/CSS/Components/Header.css'
 import '../../Assets/CSS/Components/MenuBurger.css'
 import { Href } from '../../Exporter/Components_Exporter'
@@ -10,7 +10,7 @@ export default function Header({}) {
     return (
         <header id={`header`}>
             <div id={`header-container`} className={`container`}>
-                <h1 id={`header-title`}>Header Component</h1>
+                <h1 id={`header-title`}>KUYA DING VO-CAL</h1>
                 {screenwidth > 766 ? 
                     <nav id={`header-nav`}>
                         <Href Title={`HOME`} Redirect={`#`} />
@@ -18,7 +18,7 @@ export default function Header({}) {
                     </nav>
                     :
                     <div className={`burger`}>
-                        <input className={`burger-in`} type={`checkbox`} href={`#NavMenu`} data-bs-toggle={`collapse`} data-bs-target={`#collapseExample`} />
+                        <input className={`burger-in`} type={`checkbox`} data-bs-toggle={`collapse`} data-bs-target={`#collapseExample`} />
                     </div>
                 }
             </div>

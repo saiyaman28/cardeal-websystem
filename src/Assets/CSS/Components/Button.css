@@ -8,6 +8,8 @@ label:has(input[type="file"]) {
     cursor: pointer !important;
     padding: 8px 13px !important;
     text-transform: uppercase !important;
+    max-width: 228px !important;
+    max-height: 38px !important;
 }
 button:hover,
 input[type="submit"]:hover,
