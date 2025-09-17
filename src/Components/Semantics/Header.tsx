@@ -1,5 +1,5 @@
 // import React from 'react'
-import '../../Assets/CSS/Components/Header.css'
+import '../../Assets/CSS/Components/Header.sass'
 import '../../Assets/CSS/Components/MenuBurger.css'
 import { Href } from '../../Exporter/Components_Exporter'
 import { useScreenWidth } from '../../Exporter/Hooks_Exporter'
@@ -10,7 +10,7 @@ export default function Header({}) {
     return (
         <header id={`header`}>
             <div id={`header-container`} className={`container`}>
-                <h1 id={`header-title`}>KUYA DING VO-CAL</h1>
+                <h1 id={`header-title`}>CARDEAL</h1>
                 {screenwidth > 766 ? 
                     <nav id={`header-nav`}>
                         <Href Title={`HOME`} Redirect={`#`} />
@@ -22,6 +22,14 @@ export default function Header({}) {
                     </div>
                 }
             </div>
+            { screenwidth <= 766 && 
+                <div className={`collapse`} id={`collapseExample`}>
+                    <nav>
+                        <Href Title={`HOME`} Redirect={`#`} />
+                        <Href Title={`GALLERY`} Redirect={`#`} />
+                    </nav>
+                </div>
+            }
         </header>
     )
 }

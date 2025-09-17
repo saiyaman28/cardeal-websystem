@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Assets/CSS/Components/Section.css'
+import '../../Assets/CSS/Components/Section.sass'
 
 type SectionProps = {
     children?: React.ReactNode

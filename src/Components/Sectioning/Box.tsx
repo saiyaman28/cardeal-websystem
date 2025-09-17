@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Assets/CSS/Components/Box.css'
+import '../../Assets/CSS/Components/Box.sass'
 
 type BoxProps = {
     children?: React.ReactNode

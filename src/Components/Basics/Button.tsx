@@ -1,6 +1,6 @@
 // import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import '../../Assets/CSS/Components/Button.css'
+import '../../Assets/CSS/Components/Button.sass'
 
 type ButtonMode = {
     Redirect?: string

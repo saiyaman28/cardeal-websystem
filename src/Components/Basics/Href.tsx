@@ -1,6 +1,6 @@
 // import React from 'react'
 import { Link } from 'react-router-dom'
-import '../../Assets/CSS/Components/Href.css'
+import '../../Assets/CSS/Components/Href.sass'
 
 type HrefMode = {
     Redirect?: string

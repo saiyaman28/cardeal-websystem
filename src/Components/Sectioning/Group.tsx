@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Assets/CSS/Components/Group.css'
+import '../../Assets/CSS/Components/Group.sass'
 
 type GroupProps = {
     children?: React.ReactNode

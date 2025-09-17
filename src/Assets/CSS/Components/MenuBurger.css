@@ -4,7 +4,7 @@
 header > div > div.burger > input[type="checkbox"] {
     --s: 28px;
     /* control the size */
-    --c: #851022;
+    --c: white;
     /* the color */
 
     height: var(--s);

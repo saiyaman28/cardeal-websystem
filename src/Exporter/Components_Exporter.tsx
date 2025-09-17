@@ -9,3 +9,5 @@ export { default as Inputbox } from '../Components/Basics/Inputbox'
 export { default as Selectionbox } from '../Components/Basics/Selectionbox'
 export { default as Button } from '../Components/Basics/Button'
 export { default as Href } from '../Components/Basics/Href'
+
+export { default as Card } from '../Components/Intermediate/Card'

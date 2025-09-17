@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../Assets/CSS/Components/Main.css'
+import '../../Assets/CSS/Components/Main.sass'
 
 type MainProps = {
     children?: React.ReactNode

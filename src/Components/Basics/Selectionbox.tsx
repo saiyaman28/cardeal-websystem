@@ -1,5 +1,5 @@
 // import React from 'react'
-import '../../Assets/CSS/Components/Inputbox Selectionbox.css'
+import '../../Assets/CSS/Components/Inputbox Selectionbox.sass'
 
 type SelectboxProps = {
     ID?: string
