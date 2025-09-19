@@ -2,10 +2,10 @@
 import '../../Assets/CSS/Components/Header.sass'
 import '../../Assets/CSS/Components/MenuBurger.css'
 import { Href } from '../../Exporter/Components_Exporter'
-import { useScreenWidth } from '../../Exporter/Hooks_Exporter'
+import { UseScreenWidth } from '../../Exporter/Hooks_Exporter'
 
 export default function Header({}) {
-    const screenwidth = useScreenWidth();
+    const screenwidth = UseScreenWidth()
 
     return (
         <header id={`header`}>
@@ -13,8 +13,8 @@ export default function Header({}) {
                 <h1 id={`header-title`}>CARDEAL</h1>
                 {screenwidth > 766 ? 
                     <nav id={`header-nav`}>
-                        <Href Title={`HOME`} Redirect={`#`} />
-                        <Href Title={`GALLERY`} Redirect={`#`} />
+                        <Href Title={`HOME`} Redirect={`/`} />
+                        <Href Title={`EXPLORE`} Redirect={`/explore`} />
                     </nav>
                     :
                     <div className={`burger`}>
@@ -25,8 +25,8 @@ export default function Header({}) {
             { screenwidth <= 766 && 
                 <div className={`collapse`} id={`collapseExample`}>
                     <nav>
-                        <Href Title={`HOME`} Redirect={`#`} />
-                        <Href Title={`GALLERY`} Redirect={`#`} />
+                        <Href Title={`HOME`} Redirect={`/`} />
+                        <Href Title={`EXPLORE`} Redirect={`/explore`} />
                     </nav>
                 </div>
             }

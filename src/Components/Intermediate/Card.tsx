@@ -6,16 +6,20 @@ type CardProps = {
     Class?: string
     Title?: string
     Image?: string
+    BGImage?: string
 }
 
-export default function Card({ ID, Class, Title, Image }: CardProps ) {
+export default function Card({ ID, Class, Title, Image, BGImage }: CardProps ) {
     return (
         <label id={ID} className={`${Class} card`}>
-            { Image ? 
-            <img src={Image} />
-            :
-            <div></div>
+            <div>
+            { Image && 
+            <>
+                { BGImage && <img src={BGImage} className={`bgimage`} /> }
+                <img src={Image} />
+            </>
             }
+            </div>
             <h2>{Title}</h2>
         </label>
     )
